@@ -10,6 +10,33 @@
 </head>
 <body>
 
+    <header class="header">
+        <div class="header__container">
+            <div class="logo"><a href="#"><img src="assets/img/logo.png" alt="FoodTime"></a></div>
+            <nav class="nav">
+                <ul class="nav__links">
+                    <li class="nav__link"><a href="#">Home</a></li>
+                    <li class="nav__link"><a href="#">Blog</a></li>
+                    <li class="nav__link"><a href="#">About us</a></li>
+                    <div class="dropdown">
+                        <button onclick="dropDownFunc()" class="dropbtn"><span>EN</span>
+                            <img id="arrowdown" src="assets/img/generaly/arrowDown.svg" alt="">
+                        </button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="#EN" class="active">EN</a>
+                            <a href="#UA">UA</a>
+                            <a href="#PL">PL</a>
+                          </div>
+                    </div>
+                </ul>
+                <div class="nav__interaction">
+                    <button type="submit" class="nav__auth">Login</button>
+                    <div class="nav__basket"><img src="./assets/img/generaly/basket.svg" alt="Basket"></div>
+                </div>
+            </nav>
+        </div>       
+    </header>
+
     <script src="script.js"></script>
 </body>
 </html>
