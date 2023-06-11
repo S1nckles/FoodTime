@@ -30,32 +30,36 @@
                     </div>
                 </ul>
                 <div class="nav__interaction">
-                    <button type="submit" class="nav__auth">Login</button>
-                    <div class="nav__basket"><img src="./assets/img/generaly/basket.svg" alt="Basket"></div>
+                    <button type="submit" class="btn nav__auth">Login</button>
+                    <div class="nav__basket" onclick="basketClick()"><img src="./assets/img/generaly/basket.svg" alt="Basket"></div>
                 </div>
             </nav>
         </div>       
     </header>
-    <main class="main">
-        <section class="main-section">
-            <div class="main__content">
-                <h1 class="content__title">Order food online from your favourite local restaurants.</h1>
-                <p class="content__text">Freshly made food delivered to your door.</p>
-                <div class="content__gps">
-                    <input type="text" class="gps">
-                    <a href="#" class="btn">Search</a>
+    <main class="page">
+        <div class="page__container">
+            <section class="page__main">
+                <div class="main__content">
+                    <h1 class="content__title">Order food online from your favourite local restaurants.</h1>
+                    <p class="content__text">Freshly made food delivered to your door.</p>
+                    <div class="content__gps">
+                        <input type="text" class="gps" placeholder="Enter your location">
+                        <a href="#" class="gps__btn btn"><img src="./assets/img/generaly/dandruff.svg" alt="">Search</a>
+                    </div>
                 </div>
-            </div>
-            <div class="main__img">
-                <img src="./assets/img/fon/main.png" alt="main image">
-            </div>
-            <div class="leaf_1">
-                <img src="./assets/img/fon/—Pngtree—hand-painted noise green leaf element_4054582 1-1.png" alt=" ">
-            </div>
-            <div class="leaf_2">
-                <img src="./assets/img/fon/—Pngtree—hand-painted noise green leaf element_4054582 1.png" alt=" ">
-            </div>
-        </section>
+                <div class="main__img">
+                    <img src="./assets/img/fon/main.png" alt="main image">
+                    <button type="submit" class="img__delivered delivered"><span><img src="./assets/img/generaly/check_mark.svg" alt="Mark">200k+</span><p>People Delivered</p></button>
+                    <div class="leaf_2">
+                        <img src="./assets/img/fon/—Pngtree—hand-painted noise green leaf element_4054582 1.png" alt=" ">
+                    </div>
+                </div>
+                <div class="leaf_1">
+                    <img src="./assets/img/fon/—Pngtree—hand-painted noise green leaf element_4054582 1-1.png" alt=" ">
+                </div>
+                
+            </section>
+        </div>
     </main>
 
     <script src="script.js"></script>
