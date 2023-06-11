@@ -184,8 +184,48 @@
     
 }
 
-/* // 320px — 480px: мобильные устройства;
-// 481px — 768px: планшеты;
-// 769px — 1024px: маленькие экраны, ноутбуки;
-// 1025px — 1200px: большие экраны;
-// 1201px и больше —  очень большие экраны, телевизоры. */  
+/* Explore Section */
+
+@media (max-width: 1199.98px) {
+    .explore__title {
+        font-size: 45px;
+    }
+    .explore__text {
+        max-width: 455px;
+    }
+    .explore__img img {
+        width: 100%;
+    }
+}
+@media (max-width: 1024.98px) {
+    .page__explore {
+        flex-direction: column-reverse;
+    }
+    .explore__content {
+        width: 100%;
+    }
+    .explore__img {
+        width: 100%;
+    }
+}
+@media (max-width: 767.98px) {
+    .explore__content {
+        text-align: center;
+    }
+    .explore__title {
+        font-size: 30px;
+    }
+    .explore__text {
+        font-size: 16px;
+    }
+    .explore__btn {
+        margin: 10px auto 0 auto;
+    }
+}
+
+@media (max-width: 480.98px) {
+    .explore__btn {
+        padding: 12px 45px;
+        font-size: 20px;
+    }
+}
