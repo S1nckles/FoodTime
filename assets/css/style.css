@@ -44,6 +44,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     --second_color: #ff8b00;
     --paragraph_color: #676767;
     --black_color: #3F3F3F;
+    --disable_color: #C7C7C7;
 }
 
 /* Generaly ----------------------------------- */
@@ -55,12 +56,26 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     padding: 0 15px;
 }
 
+.btn {
+    padding: 15px 50px 15px 50px;
+    border-radius: 225px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 170%;
+    color: #FFFFFF;
+    background-color: var(--primary_color);
+    transition: background-color 0.3s ease;
+}
+.btn:hover, .btn:focus {
+    background-color: var(--second_color);
+}
 /* Header ----------------------------------- */
 
 .header {
     padding-top: 17px;
     width: 100%;
     padding-bottom: 26px;
+    background-color: #FFFFFF;
     position: fixed;
     top: 0;
     left: 0;
@@ -158,25 +173,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     column-gap: 23px;
 }
 
-.nav__auth {
-    padding: 15px 50px;
-    border-radius: 225px;
-
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 170%;
-
-    color: #FFFFFF;
-    background-color: var(--primary_color);
-
-    transition: background-color 0.3s ease;
-}
-.nav__auth:hover, .nav__auth:focus {
-    background-color: var(--second_color);
-}
-
 .nav__basket::before {
-    content: '2';
+    content: '0';
     position: absolute;
     top: 0;
     right: -10px;
@@ -191,6 +189,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     background-color: var(--second_color);
 }
 .nav__basket {
+    cursor: pointer;
     padding: 16px 16px 14px 16px;
     border-radius:50%;
     
@@ -201,4 +200,166 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 .nav__basket:hover, .nav__basket:focus {
     background-color: var(--second_color);
+}
+
+/* Main ----------------------------------- */
+
+.page {
+    margin-top: 236px;
+    max-height: 100vh;
+    position: relative;
+}
+
+.page__main {
+    display: flex;
+    align-items: center;
+    margin-bottom: 96px;
+}
+
+.main__content {
+    min-width: 58.23%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 27px;
+}
+.main__content .content__title {
+    max-width: 681px;
+
+    font-family: 'Merienda';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 130%;
+    color: var(--primary_color);
+}
+.main__content .content__text {
+    display: inline-flex;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    color: var(--paragraph_color);
+}
+.main__content .content__gps {
+    position: relative;
+    max-width: 714px;
+}
+.main__content .content__gps input {
+    min-width: 714px;
+    border-radius: 120px;
+    padding: 12px 211px 12px 74px;
+    border: 2px solid #396C03;
+    opacity: 0.3;
+    background-color: #FFFFFF;
+    position: relative;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 170%;
+}
+.main__content .content__gps input::placeholder {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 170%;
+    color: var(--disable_color);
+}
+.main__content .content__gps::before {
+    content: url(../img/generaly/gps.svg);
+
+    width: 49px;
+    height: 49px;
+    background-color: var(--second_color);
+    border-radius: 50%;
+
+    cursor: pointer;
+    position: absolute;
+    top: 8px;
+    left: 9px;
+    z-index: 11;
+
+    padding: 9px 10px 10px 9px;
+}
+
+.gps__btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 11;
+
+    display: inline-flex;
+    align-items: center; 
+}
+.gps__btn img {
+    margin-right: 8px;
+}
+
+.main__img {
+    min-width: 41.76%;
+    position: relative;
+}
+.img__delivered {
+    max-width: 245px;
+    max-height: 120px;
+    padding: 20px 28px;
+
+    cursor: default;
+
+    position: absolute;
+    left: 45%;
+    top: -10%;
+    z-index: 11;
+
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.4) 100%);
+    backdrop-filter: blur(6px);
+    border-radius: 8.86914px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    line-height: 130%;
+    text-align: center;
+    
+    border: 1px solid #ffffff;
+}
+.img__delivered span {
+    padding: 0 0 0 53px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 130%;
+    position: relative;
+    
+    color: var(--second_color);
+}
+.img__delivered img {
+    
+    max-width: 40px;
+    max-height: 40px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 1;
+}
+.img__delivered p {
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 130%;
+    color: #838383;
+}
+
+.leaf_1 {
+    position: absolute;
+    top: -30%;
+    left: 0;
+    z-index: -1;
+}
+
+.leaf_2 {
+    position: absolute;
+    top: -15%;
+    right: -20%;
+    z-index: -1;
 }
