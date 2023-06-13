@@ -352,7 +352,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 .leaf_1 {
     position: absolute;
-    top: -30%;
+    top: -25%;
     left: 0;
     z-index: -1;
 }
@@ -403,15 +403,17 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 .explore__btn {
     max-width: 231px;
-    display: flex;
-    align-items: center;
-    column-gap: 15px;
     padding: 15px 60px;
     font-weight: 500;
     font-size: 22px;
     line-height: 170%;
 
     color: #FFFFFF;
+}
+.btn-arrow {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
 }
 .explore__btn img {
     max-width: 16px;
@@ -479,3 +481,64 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     color: var(--paragraph_color);
 }
 
+/* Cooperation ----------------------------------- */
+
+.page__cooperation {
+    min-width: 100%;
+    max-height: 827px;
+    border-radius: 50px;
+    margin-top: 105px;
+    position: relative;
+    background-image: url(/assets/img/fon/link_foodtime.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.page__cooperation::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 31.25%, rgba(57, 108, 3, 0.71) 65.1%, #396C03 100%), url(image.png);
+    border-radius: 50px;
+}
+.cooperation__wrapper {
+    z-index: 5;
+    position: relative;
+    width: 100%;
+    min-height: 827px;
+    padding: 0 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    text-align: center;
+}
+.cooperation__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 130%;
+    color: #FFFFFF;
+    margin-bottom: 19px;
+}
+.cooperation__text {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    color: #EDEDED;
+    margin-bottom: 15px;
+}
+.cooperation__btn {
+    margin-bottom: 50px;
+    background-color: var(--second_color);
+}
+.cooperation__btn:hover, .cooperation__btn:focus {
+    background-color: #b06201;
+}
