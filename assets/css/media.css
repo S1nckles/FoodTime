@@ -259,3 +259,22 @@
 
     }
 }
+
+/* Cooperation Section */
+
+@media (max-width: 767.98px) {
+    .cooperation__title {
+        font-size: 32px;
+    }
+    .cooperation__text {
+        font-size: 20px;
+    }
+}
+@media (max-width: 480.98px) {
+    .cooperation__title {
+        font-size: 28px;
+    }
+    .cooperation__text {
+        font-size: 16px;
+    }
+}
