@@ -542,3 +542,129 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .cooperation__btn:hover, .cooperation__btn:focus {
     background-color: #b06201;
 }
+
+/* Questions */
+
+.page__questions {
+    width: 100%;
+    margin-top: 105px;
+    font-family: 'Poppins';
+    font-style: normal;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 32px;
+}
+
+.questions__title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 160%;
+
+    color: var(--black_color);
+}
+.questions__sort {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 36px;
+}
+
+.sort__btn {
+    display: flex;
+    column-gap: 17px;
+}
+.btn-sort {
+    background-color: transparent;
+    color: var(--primary_color);border: 1px solid var(--primary_color);
+}
+.btn-sort:hover {
+    background-color: var(--primary_color);
+    color: #FFFFFF;
+}
+.btn-active {
+    background-color: var(--primary_color);
+    color: #FFFFFF;
+}
+
+.questions__accordion {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.accordion__item {
+    border-radius: 5px;
+    width: 46.2%;
+}
+
+.accordion__item:hover {
+    opacity: 0.9;
+}
+
+.accordion__header {
+    padding: 23px 51px 23px 31px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 0;
+    border-radius: 10px 10px 0 0 ; 
+}
+
+.accordion__body {
+    padding: 0 23px 0 31px;
+    overflow: hidden;
+    height: 0;
+    transition: all .5s ease;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: var(--paragraph_color);
+
+    border: 1px solid rgba(0, 0, 0, 0.3);  
+    border-top: 0px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.active {
+    padding-bottom: 10px;
+}
+
+.icon {
+    text-align: center;
+    top: 32%;
+    font-weight: lighter;
+    position: absolute;
+    right: 11px;
+    border: 1px solid rgba(51, 51, 51, 0.3);
+    border-radius: 93px;
+    padding: 3px 7px;
+    font-size: 22px;
+    max-width: 30px;
+}
+
+.accordion__header span{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 200%;
+    color: #000000;
+}
+
+.accordion__header span {
+    font-weight: 600;
+}
+
+p {
+    text-align: left;
+}
+
+.asdasd {
+    margin-top: 400px;
+}
