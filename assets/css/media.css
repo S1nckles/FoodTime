@@ -47,8 +47,9 @@
     }
 }
 @media(max-width:480.98px) {
+    
     .header {
-        position: absolute;
+        position: relative;
     }
     .nav__link a {
         font-size: 14px;
@@ -140,6 +141,9 @@
     }
 }
 @media (max-width: 480.98px) {
+    .page {
+        margin-top: 50px;
+    }
     .main__content .content__title {
         font-size: 35px;
     }
@@ -287,7 +291,7 @@
         width: 100%;
     }
 }
-@media(max-width: 480.98px) {
+@media (max-width: 480.98px) {
     .questions__title {
         font-size: 35px;
     }
@@ -303,4 +307,97 @@
     .questions__title {
         font-size: 32px;
     } 
+}
+
+/* Download Section */
+
+@media (max-width: 1314.98px) {
+    .download__img {
+        width: 550px;
+        height: auto;
+    }
+    .page__download::after {
+        min-height: 442px;
+    }
+}
+@media (max-width: 1199.98px) {
+    .download-content__installation > a > img {
+        max-width: 175px;
+    }
+    .download__img {
+        width: 500px;
+        height: auto;
+    }
+    .page__download::after {
+        min-height: 409.3px;
+    }
+}
+@media (max-width: 1024.98px) {
+    .download__content {
+        width: 50%;
+    }
+    .download__img {
+        max-width: 50%;
+        width: 450px;
+    }
+    .download-content__title {
+        font-size: 34px;
+    }
+    .download-content__description {
+        margin-top: 12px;
+    }
+    .page__download::after {
+        min-height: 365px;
+    }
+}
+@media (max-width: 767.98px) {
+    .page__download {
+        text-align: center;
+        row-gap: 30px;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .download__content {
+        width: 75%;
+    }
+    .download-content__description {
+        text-align: center;
+        max-width: 100%;
+    }
+    .download__img {
+        display: none;
+    }
+    .page__download::after {
+        min-height: 312px;
+    }
+    .download-content__installation {
+        justify-content: center;
+    }
+}
+@media (max-width: 517.98px) {
+    .download__content {
+        width: 100%;
+    }
+}
+@media (max-width: 424.98px) {
+    .download-content__title {
+        font-size: 30px;
+    }
+    .download-content__description {
+        font-size: 18px;
+    }
+}
+@media (max-width: 374.98px) {
+    .download-content__installation {
+        gap: 10px;
+        flex-direction: row;
+        align-items: center;
+    }
+    .download-content__installation > a > img {
+        max-width: 150px;
+    }
+    .page__download::after {
+        min-height: 353px;
+    }
+    
 }
